@@ -1,7 +1,6 @@
 
 # sztp-usb-loader
 
-
 Implements the tool to create the Bootstrapping data to securely provision the device using USB.
 Given the USB drive is not a Trusted source of Bootstrapping data, we need to validate the contents of the USB before using it for Provisioning.
 RFC8572 defines a way to verify and trust the Boostraping data from Untrusted data sources(like USB) and Securely provisioning the Device.
@@ -128,7 +127,7 @@ dummy_usb/
 4 directories, 4 files
 ```
 
-- The same USB can be used to provision multiple devices if needed. Simply run the tool again with the --image-url path set to the path of existing image on the USB and skipping the --copy-image flag and --image-relative-path .
+- The same USB can be used to provision multiple devices if needed. Simply run the tool again with the --image-url path set to the path of existing image on the USB and skipping the --copy-image flag.
 ```
 python3 usb.py \
         -prc testdata/pre_config_script.sh \
@@ -136,6 +135,7 @@ python3 usb.py \
         -psc testdata/post_config_script.sh \
         -ch merge \
         -iu dummy_usb/images/image.iso \
+        -ip images/image.iso \
         -ia sha-256 \
         -oc certificates/owner.cert \
         -ocpk certificates/owner.key \
