@@ -29,8 +29,9 @@ optional arguments:
   -cp, --copy-image     Copy the image from path in --image-url to argument of
                         --image-relative-path
   -ip IMGRELPATH, --image-relative-path IMGRELPATH
-                        Relative Path in USB where image (is present / should
-                        be copied to)
+                        Relative folder path in USB where image (is present /
+                        should be copied to). Make sure to end the path with a
+                        /
   -ver OSVERSION, --os-version OSVERSION
                         OS Version
   -name OSNAME, --os-name OSNAME

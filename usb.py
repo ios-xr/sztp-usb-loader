@@ -162,7 +162,7 @@ def main():
                         '--image-relative-path',
                         dest='imgRelPath',
                         required=False,
-                        help='Relative Path in USB where image (is present / should be copied to)')
+                        help='Relative folder path in USB where image (is present / should be copied to). Make sure to end the path with a /')
     parser.add_argument('-ver',
                         '--os-version',
                         dest='osVersion',
