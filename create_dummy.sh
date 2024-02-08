@@ -21,7 +21,7 @@ python3 usb.py \
         -psc testdata/post_config_script.sh \
         -ch merge \
         -iu dummy_usb/images/image.iso \
-        -ip images/image.iso \
+        -ip images/ \
         -ia sha-256 \
         -oc certificates/owner.cert \
         -ocpk certificates/owner.key \
